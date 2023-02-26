@@ -1,0 +1,283 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/arkop/ontologies/2023/1/untitled-ontology-212#"
+     xml:base="http://www.semanticweb.org/arkop/ontologies/2023/1/untitled-ontology-212"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:Core="https://spec.industrialontologies.org/ontology/core/Core/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:sensor-core="http://www.ontocommons.eu/test/sensor-core#"
+     xmlns:AnnotationVocabulary="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/">
+    <owl:Ontology rdf:about="http://www.ontocommons.eu/test/sensor-core">
+        <owl:imports rdf:resource="https://spec.industrialontologies.org/ontology/202301/core/Core/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontocommons.eu/test/sensor-core#containedByAtSomeTimes -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontocommons.eu/test/sensor-core#containedByAtSomeTimes">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000171"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontocommons.eu/test/sensor-core#containerOfAtSomeTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontocommons.eu/test/sensor-core#containerOfAtSomeTime">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000124"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontocommons.eu/test/sensor-core#AmountOfWater -->
+
+    <owl:Class rdf:about="http://www.ontocommons.eu/test/sensor-core#AmountOfWater">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontocommons.eu/test/sensor-core#Reservoire -->
+
+    <owl:Class rdf:about="http://www.ontocommons.eu/test/sensor-core#Reservoire">
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontocommons.eu/test/sensor-core#ReservoireWaterTemperature -->
+
+    <owl:Class rdf:about="http://www.ontocommons.eu/test/sensor-core#ReservoireWaterTemperature">
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MeasurementInformationContentEntity"/>
+        <owl:disjointWith rdf:resource="http://www.ontocommons.eu/test/sensor-core#ReservoireWaterTurbidity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontocommons.eu/test/sensor-core#ReservoireWaterTurbidity -->
+
+    <owl:Class rdf:about="http://www.ontocommons.eu/test/sensor-core#ReservoireWaterTurbidity">
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MeasurementInformationContentEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontocommons.eu/test/sensor-core#Sensor -->
+
+    <owl:Class rdf:about="http://www.ontocommons.eu/test/sensor-core#Sensor">
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PieceOfEquipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontocommons.eu/test/sensor-core#Temperature -->
+
+    <owl:Class rdf:about="http://www.ontocommons.eu/test/sensor-core#Temperature">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontocommons.eu/test/sensor-core#TemperatureMeasurementProcess -->
+
+    <owl:Class rdf:about="http://www.ontocommons.eu/test/sensor-core#TemperatureMeasurementProcess">
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MeasurementProcess"/>
+        <owl:disjointWith rdf:resource="http://www.ontocommons.eu/test/sensor-core#TurbidityMeasurementProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontocommons.eu/test/sensor-core#TemperatureSensor -->
+
+    <owl:Class rdf:about="http://www.ontocommons.eu/test/sensor-core#TemperatureSensor">
+        <rdfs:subClassOf rdf:resource="http://www.ontocommons.eu/test/sensor-core#Sensor"/>
+        <owl:disjointWith rdf:resource="http://www.ontocommons.eu/test/sensor-core#TurbiditySensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontocommons.eu/test/sensor-core#Turbidity -->
+
+    <owl:Class rdf:about="http://www.ontocommons.eu/test/sensor-core#Turbidity">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontocommons.eu/test/sensor-core#TurbidityMeasurementProcess -->
+
+    <owl:Class rdf:about="http://www.ontocommons.eu/test/sensor-core#TurbidityMeasurementProcess">
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MeasurementProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontocommons.eu/test/sensor-core#TurbiditySensor -->
+
+    <owl:Class rdf:about="http://www.ontocommons.eu/test/sensor-core#TurbiditySensor">
+        <rdfs:subClassOf rdf:resource="http://www.ontocommons.eu/test/sensor-core#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontocommons.eu/test/sensor-core#at-depth-30cm -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontocommons.eu/test/sensor-core#at-depth-30cm">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontocommons.eu/test/sensor-core#at-depth-60cm -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontocommons.eu/test/sensor-core#at-depth-60cm">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontocommons.eu/test/sensor-core#fish-tank -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontocommons.eu/test/sensor-core#fish-tank">
+        <rdf:type rdf:resource="http://www.ontocommons.eu/test/sensor-core#Reservoire"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontocommons.eu/test/sensor-core#inner-area-of-fish-tank -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontocommons.eu/test/sensor-core#inner-area-of-fish-tank">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+        <obo:BFO_0000110 rdf:resource="http://www.ontocommons.eu/test/sensor-core#at-depth-30cm"/>
+        <obo:BFO_0000110 rdf:resource="http://www.ontocommons.eu/test/sensor-core#at-depth-60cm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontocommons.eu/test/sensor-core#temp-20.03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontocommons.eu/test/sensor-core#temp-20.03">
+        <rdf:type rdf:resource="http://www.ontocommons.eu/test/sensor-core#ReservoireWaterTemperature"/>
+        <obo:BFO_0000110 rdf:resource="http://www.ontocommons.eu/test/sensor-core#temp-ex-20.03"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontocommons.eu/test/sensor-core#temp-ex-20.03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontocommons.eu/test/sensor-core#temp-ex-20.03">
+        <rdf:type rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MeasuredValueExpression"/>
+        <Core:hasSimpleExpressionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">20.03</Core:hasSimpleExpressionValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontocommons.eu/test/sensor-core#temp-sensor-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontocommons.eu/test/sensor-core#temp-sensor-1">
+        <rdf:type rdf:resource="http://www.ontocommons.eu/test/sensor-core#TemperatureSensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontocommons.eu/test/sensor-core#water -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontocommons.eu/test/sensor-core#water">
+        <rdf:type rdf:resource="http://www.ontocommons.eu/test/sensor-core#AmountOfWater"/>
+        <obo:BFO_0000171 rdf:resource="http://www.ontocommons.eu/test/sensor-core#inner-area-of-fish-tank"/>
+        <sensor-core:containedByAtSomeTimes rdf:resource="http://www.ontocommons.eu/test/sensor-core#fish-tank"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontocommons.eu/test/sensor-core#t-09:22:08 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontocommons.eu/test/sensor-core#t-09:22:08">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000203"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontocommons.eu/test/sensor-core#t-ex-09:22:08 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontocommons.eu/test/sensor-core#t-ex-09:22:08">
+        <rdf:type rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/ValueExpression"/>
+        <Core:isValueExpressionOfAtAllTimes rdf:resource="http://www.ontocommons.eu/test/sensor-core#t-09:22:08"/>
+        <Core:hasSimpleExpressionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-03-11T09:22:08Z</Core:hasSimpleExpressionValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontocommons.eu/test/sensor-core#temp-measurement-09:22:08 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontocommons.eu/test/sensor-core#temp-measurement-09:22:08">
+        <rdf:type rdf:resource="http://www.ontocommons.eu/test/sensor-core#TemperatureMeasurementProcess"/>
+        <obo:BFO_0000057 rdf:resource="http://www.ontocommons.eu/test/sensor-core#temp-sensor-1"/>
+        <obo:BFO_0000066 rdf:resource="http://www.ontocommons.eu/test/sensor-core#at-depth-30cm"/>
+        <obo:BFO_0000199 rdf:resource="http://www.ontocommons.eu/test/sensor-core#t-09:22:08"/>
+        <Core:hasSpecifiedOutput rdf:resource="http://www.ontocommons.eu/test/sensor-core#temp-20.03"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000145"/>
+            <rdf:Description rdf:about="http://www.ontocommons.eu/test/sensor-core#Temperature"/>
+            <rdf:Description rdf:about="http://www.ontocommons.eu/test/sensor-core#Turbidity"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
