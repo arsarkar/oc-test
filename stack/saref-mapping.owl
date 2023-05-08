@@ -8,11 +8,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="http://www.ontocommons.eu/mapping/saref">
-        <owl:imports rdf:resource="http://www.ontocommons.eu/measurement-core"/>
-        <owl:imports rdf:resource="http://www.ontocommons.eu/sensor-core"/>
-        <owl:imports rdf:resource="https://saref.etsi.org/core/v3.1.1/"/>
-    </owl:Ontology>
+    <owl:Ontology rdf:about="http://www.ontocommons.eu/mapping/saref"/>
     
 
 
@@ -29,29 +25,29 @@
 
     <!-- http://www.ontocommons.eu/measurement-core#6518bddd-6e4c-486a-911c-554014ff9e74 -->
 
-    <rdf:Description rdf:about="http://www.ontocommons.eu/measurement-core#6518bddd-6e4c-486a-911c-554014ff9e74">
+    <owl:Class rdf:about="http://www.ontocommons.eu/measurement-core#6518bddd-6e4c-486a-911c-554014ff9e74">
         <owl:equivalentClass rdf:resource="https://saref.etsi.org/core/Measurement"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.ontocommons.eu/sensor-core#37a74125-b08c-4edc-9540-4d064034a440 -->
 
-    <rdf:Description rdf:about="http://www.ontocommons.eu/sensor-core#37a74125-b08c-4edc-9540-4d064034a440">
+    <owl:Class rdf:about="http://www.ontocommons.eu/sensor-core#37a74125-b08c-4edc-9540-4d064034a440">
         <owl:equivalentClass rdf:resource="https://saref.etsi.org/core/Device"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- https://saref.etsi.org/core/Device -->
 
-    <rdf:Description rdf:about="https://saref.etsi.org/core/Device"/>
+    <owl:Class rdf:about="https://saref.etsi.org/core/Device"/>
     
 
 
     <!-- https://saref.etsi.org/core/Measurement -->
 
-    <rdf:Description rdf:about="https://saref.etsi.org/core/Measurement"/>
+    <owl:Class rdf:about="https://saref.etsi.org/core/Measurement"/>
 </rdf:RDF>
 
 

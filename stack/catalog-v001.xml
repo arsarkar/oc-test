@@ -5,10 +5,11 @@
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/bfo/iso/2020/bfo.owl" uri="file:/C:/Users/arkop/git/Ontocommons-MLO/OntologyFramework/owl/TRO/TLOs/bfo-2020.owl"/>
     <uri id="Imports Wizard Entry" name="http://www.ontocommons.eu/mapping/iof-core" uri="iof-core-mapping.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1683565385571" name="http://www.ontocommons.eu/mapping/iof-core" uri="iof-core-mapping.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1683565385571" name="http://www.ontocommons.eu/measurement-core" uri="measure-core.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1683565385571" name="http://www.ontocommons.eu/sensor-core" uri="sensor-core.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1683565385571" name="http://www.semanticweb.org/arkop/ontologies/2023/4/untitled-ontology-232" uri="saref-mapping.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1683565385571" name="http://www.semanticweb.org/arkop/ontologies/2023/4/untitled-ontology-233" uri="sensor-measures-iof.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1683570412605" name="http://www.ontocommons.eu/mapping/iof-core" uri="iof-core-mapping.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1683570412605" name="http://www.ontocommons.eu/mapping/sensor-measures-sensor" uri="sensor-measures-saref.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1683570412605" name="http://www.ontocommons.eu/measurement-core" uri="measure-bridge.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1683570412605" name="http://www.ontocommons.eu/sensor-core" uri="equipment-bridge.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1683570412605" name="http://www.semanticweb.org/arkop/ontologies/2023/4/untitled-ontology-232" uri="saref-mapping.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1683570412605" name="http://www.semanticweb.org/arkop/ontologies/2023/4/untitled-ontology-233" uri="sensor-measures-iof.owl"/>
     </group>
 </catalog>

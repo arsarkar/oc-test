@@ -8,9 +8,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="http://www.ontocommons.eu/mapping/sensor-measures-sensor">
-        <owl:imports rdf:resource="https://saref.etsi.org/core/v3.1.1/"/>
-    </owl:Ontology>
+    <owl:Ontology rdf:about="http://www.ontocommons.eu/mapping/sensor-measures-sensor"/>
     
 
 
@@ -46,6 +44,18 @@
     <owl:Class rdf:about="http://www.ontocommons.eu/mapping/sensor-measures-sensor#TurbiditySensor">
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Sensor"/>
     </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/Measurement -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/Measurement"/>
+    
+
+
+    <!-- https://saref.etsi.org/core/Sensor -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/Sensor"/>
 </rdf:RDF>
 
 
