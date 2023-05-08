@@ -198,6 +198,7 @@
     <owl:NamedIndividual rdf:about="http://www.ontocommons.eu/test/sensor-core#temp-20.03">
         <rdf:type rdf:resource="http://www.ontocommons.eu/test/sensor-core#ReservoireWaterTemperature"/>
         <obo:BFO_0000110 rdf:resource="http://www.ontocommons.eu/test/sensor-core#temp-ex-20.03"/>
+        <Core:describes rdf:resource="http://www.ontocommons.eu/test/sensor-core#temperature"/>
     </owl:NamedIndividual>
     
 
@@ -215,6 +216,15 @@
 
     <owl:NamedIndividual rdf:about="http://www.ontocommons.eu/test/sensor-core#temp-sensor-1">
         <rdf:type rdf:resource="http://www.ontocommons.eu/test/sensor-core#TemperatureSensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontocommons.eu/test/sensor-core#temperature -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontocommons.eu/test/sensor-core#temperature">
+        <rdf:type rdf:resource="http://www.ontocommons.eu/test/sensor-core#Temperature"/>
+        <obo:BFO_0000197 rdf:resource="http://www.ontocommons.eu/test/sensor-core#water"/>
     </owl:NamedIndividual>
     
 
